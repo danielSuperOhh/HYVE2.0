@@ -13,11 +13,22 @@ const Table = () => {
   const data = [
     ['Fees', '1.8%', '2% - 14%'],
     ['Processing time', 'Instant', '1 - 5 days'],
-    ['Transparency', glasses, sick],
-    ['Withdrawal to local account', angleSmile, diss],
-    ['Crypto support', eyes, ever],
-    ['User interface', 'Stable coin', sad],
+    ['Transparency', 'glasses.png', 'sick.png'],
+    ['Withdrawal to local account', 'angleSmile.png', 'diss.png'],
+    ['Crypto support', 'eyes.png', 'ever.png'],
+    ['User interface', 'Stable coin', 'sad.png'],
   ];
+
+  const imageMap = {
+    'glasses.png': glasses,
+    'sick.png': sick,
+    'angleSmile.png': angleSmile,
+    'diss.png': diss,
+    'eyes.png': eyes,
+    'ever.png': ever,
+    'sad.png': sad
+  };
+  
 
   return (
     <div className="table-container">
@@ -30,20 +41,20 @@ const Table = () => {
           </tr>
         </thead>
         <tbody>
-            {data.map((row, index) => (
-                <tr key={index}>
-                {row.map((cell, cellIndex) => (
-                    <td key={cellIndex}>
-                    {typeof cell === 'string' && cell.endsWith('.png') ? (
-                        <img src={cell} alt={`Image ${index}`} style={{ maxWidth: '50px', maxHeight: '50px' }} />
-                    ) : (
-                        cell
-                    )}
-                    </td>
-                ))}
-                </tr>
-            ))}
-        </tbody>
+  {data.map((row, index) => (
+    <tr key={index}>
+      {row.map((cell, cellIndex) => (
+        <td key={cellIndex}>
+          {cellIndex >= 1 && imageMap[cell] ? (
+            <img src={imageMap[cell]} alt={`Image ${index}`} style={{ maxWidth: '100px', maxHeight: '100px' }} />
+          ) : (
+            cell
+          )}
+        </td>
+      ))}
+    </tr>
+  ))}
+</tbody>
       </table>
     </div>
   );
