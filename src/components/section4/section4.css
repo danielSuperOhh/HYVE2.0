@@ -1,0 +1,11 @@
+.section4{
+    display: flex;
+    padding: 43px 0px;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+    background-image: url(../../assets/Map.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}

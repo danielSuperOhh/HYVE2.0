@@ -1,0 +1,136 @@
+.section2{
+    width: 100%;
+    display: inline-flex;
+    padding: 64px 82px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.whyHyve{
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.whyHyve h1{
+    color: #041E45;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.bigWe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 35px;
+}
+
+.we{
+    max-width: 904px;
+    width: 100%;
+    color: var(--texts-colours-text-colours-04, #808080);
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.threeWhy{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 30px;
+}
+
+.circle{
+    width: 118px;
+    height: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #FFF;
+    stroke-width: 0.5px;
+    stroke: var(--blues-blue-colour-01, #CED8E8);
+    filter: drop-shadow(0px -4px 36px rgba(20, 53, 220, 0.12)) drop-shadow(0px 24px 48px rgba(13, 49, 227, 0.11));
+}
+
+.fast{
+    color: #FF7000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.safe{
+    color: #049793;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.trans{
+    color: #C52990;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.small{
+    max-width: 362px;
+    color: #606060;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+@media screen and (max-width: 887px){
+    .threeWhy{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .whyHyve h1{
+        width: 100%;
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .we{
+        font-size: 13.3px;
+    }
+
+    .section2{
+        padding: 12px 30px 68.221px 30px;
+    }    
+}
