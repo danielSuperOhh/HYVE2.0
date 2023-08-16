@@ -142,3 +142,9 @@
     }
 }
 
+@media screen and (max-width: 470px){
+    .line{
+        height: 50px;
+    }
+    
+}
