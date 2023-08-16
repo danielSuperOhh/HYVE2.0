@@ -1,0 +1,144 @@
+.section7{
+    display: flex;
+    padding: 80px 60px 80px 0px;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section7-video{
+    width: 50%;
+}
+
+.video7{
+    width: 95%;
+    height: 729px;
+    background-color: gray;
+}
+
+.text7 h1{
+    color: var(--blues-blue-colour-07, #041E45);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 40px;
+}
+
+.text7-1{
+    display: flex;
+}
+
+.text7-1:nth-child(1){
+    padding-bottom: 20px;
+}
+
+.text7-1:nth-child(2){
+    padding-bottom: 20px;
+}
+
+.numb{
+    padding-right: 50px;
+}
+
+.numb p{
+    color: var(--orange-colours-primary-orange, #FF7000);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 21px */
+}
+
+.line{
+    width: 2px;
+    height: 70px;
+    background-color: #FF7000;
+    margin-left: 5px;
+}
+
+.numb-text h4{
+    color: var(--blues-blue-colour-04, #325D9E);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 24px */
+}
+
+.numb-text p{
+    max-width: 478px;
+    color: var(--texts-colours-text-colours-04, #808080);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+
+@media screen and (max-width: 1151px){
+    .section7{
+        padding: 80px 15px 80px 0px;
+    }
+    
+}
+
+@media screen and (max-width: 1106px){
+    .section7{
+        padding-right: 0px;
+    }
+
+    .section7-video{
+        width: 100%;
+    }
+
+    .video7{
+        width: 100%;
+    }
+
+    .section7-text{
+        width: 100%;
+    }
+
+    .text7 h1{
+        text-align: center;
+        padding-top: 30px;
+        font-size: 50px;
+    }
+
+    .text7-list{
+        display: flex;
+        justify-content: center;
+    }
+
+    .numb-text p{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .video7{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .text7-list{
+        padding: 0px 20px;
+    }
+
+    .text7 h1{
+        font-size: 5vmin;
+    }
+
+    .numb p{
+        font-size: 2.1vmin;
+    }
+
+    .numb-text h4{
+        font-size: 2.4vmin;
+    }
+
+    .numb-text p{
+        font-size: 2.3vim;
+    }
+}
+

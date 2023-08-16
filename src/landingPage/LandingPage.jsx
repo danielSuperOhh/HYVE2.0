@@ -5,6 +5,7 @@ import Section3 from '../components/section3/Section3'
 import Section4 from '../components/section4/Section4'
 import Section5 from '../components/section5/Section5'
 import Section6 from '../components/section6/Section6'
+import Section7 from '../components/section7/Section7'
 import './landingPage.css'
 
 const LandingPage = () => {
@@ -19,6 +20,7 @@ const LandingPage = () => {
         <Section4/>
         <Section5/>
         <Section6/>
+        <Section7/>
     </div>
   )
 }
