@@ -19,7 +19,7 @@ const Button = ({ width, height, hoverColor, hoverTextColor, padding, color, bor
                                                                                                                                                        
   const handleMouseLeave = (e) => {
     e.target.style.backgroundColor = backgroundColor;
-    // e.target.style.color = '#093D8B' || '#FBFBFB';
+    e.target.style.color = color || '#FBFBFB';
   };
 
   return (
