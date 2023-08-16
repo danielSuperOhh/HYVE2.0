@@ -127,7 +127,10 @@
 
     .text7 h1{
         font-size: 5vmin;
+        text-align: left;
+        padding-left: 20px;
     }
+
 
     .numb p{
         font-size: 2.1vmin;
@@ -145,8 +148,7 @@
 @media screen and (max-width: 470px){
     .line{
         height: 50px;
-    }
-    
+    }  
 }
 
 @media screen and (max-width: 420px){
