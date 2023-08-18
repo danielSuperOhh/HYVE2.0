@@ -1,12 +1,24 @@
 import './section5.css'
+import womanTyping from '../../assets/womanTyping.mp4'
+import manWomanTyping from '../../assets/manWomanTyping.mp4'
+
+
 
 const Section5 = () => {
   return (
     <div>
         <div className="section5">
             <div className="video-section">
-                <div className="video1"></div>
-                <div className="video2"></div>
+                <div className="video1">
+                    <video autoPlay loop muted playsInline>
+                            <source src={manWomanTyping} type="video/mp4" />
+                    </video>
+                </div>
+                <div className="video2">
+                    <video autoPlay loop muted playsInline>
+                        <source src={womanTyping} type="video/mp4" />
+                    </video>
+                </div>
             </div>
             <div className="text-area">
                 <div className="comt">

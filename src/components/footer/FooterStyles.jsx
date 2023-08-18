@@ -47,7 +47,7 @@ export const FooterLink = styled.a`
     line-height: 150%; /* 21px */
 
     &:hover {
-        color: green;
+        color: #ADBED8;
         transition: 200ms ease-in;
     }
 `;

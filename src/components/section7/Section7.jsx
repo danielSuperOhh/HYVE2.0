@@ -1,11 +1,16 @@
 import './section7.css'
+import manTyping from '../../assets/manTyping.mp4'
 
 const Section7 = () => {
   return (
     <div>
         <div className="section7">
             <div className="section7-video">
-                <div className="video7"></div>
+            <div className="video7">
+                <video autoPlay loop muted playsInline>
+                    <source src={manTyping} type="video/mp4" />
+                </video>
+            </div>
             </div>
 
             <div className="section7-text">

@@ -22,7 +22,7 @@ return (
 		<Row>
         <Column >
 			<Heading style={{marginBottom:'0px'}}><img src={hyvelogo2} alt="" /></Heading>
-            <FooterLink style={{fontSize: '10px', paddingTop:'0px', paddingBottom:'15px'}}>Live beyond borders</FooterLink>
+            <Heading style={{fontSize: '10px', paddingTop:'0px', paddingBottom:'7px', fontWeight: 'normal'}}>Live beyond borders</Heading>
             <Button padding='10px 10px' width='151px' height='48px' color='#FBFBFB'>Create Account</Button>
 		</Column>
 
