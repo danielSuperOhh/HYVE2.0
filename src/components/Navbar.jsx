@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './navbar.css'
 import Button from './button/Button';
 import { Link } from 'react-router-dom'
+import hyveSvg from '../assets/hyveSvg.svg'
 
 
 const Navbar = () => {
@@ -32,7 +33,9 @@ const Navbar = () => {
     return (
     <div>
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-            <a href='#' className='logo'></a>
+            <a href='#' className='logo'>
+                <img src={hyveSvg} alt="" />
+            </a>
             
             <div className='nav_links'>
                 <ul id='links' className={clicked ? '#links active' : '#links'}>
