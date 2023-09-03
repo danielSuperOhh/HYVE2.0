@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/footer/Footer'
-// import { FooterLink } from '../components/footer/FooterStyles'
+import { Link } from 'react-router-dom';
 import Section1 from '../components/section1/Section1'
 import Section2 from '../components/section2/Section2'
 import Section3 from '../components/section3/Section3'

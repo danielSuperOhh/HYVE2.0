@@ -1,0 +1,262 @@
+.dashhome{
+    margin-left: 320px; 
+    width: calc(100% - 320px); 
+    height: fit-content;
+    z-index: 0; 
+    padding: 30px 30px 20px 40px;
+    background-color: #f8f9fd;
+    /* border: 1px solid; */
+}
+
+
+.over{
+    color: #041E45;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 150%; 
+    padding-bottom: 20px;
+}
+
+.card-section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.card{
+    width: 420px;
+    height: 220px;
+    background-color: rgb(106, 110, 131, 0.2);
+    border-radius: 15px;
+    padding: 25px 25px;
+}
+
+.eye{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.eye svg{
+    height: 20px;
+    width: 20px;
+}
+
+.eye p{
+    color: var(--texts-colours-text-colours-04, #808080);
+    font-size: 14.6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.balance p{
+    color: #1F1F1F;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    padding: 50px 0px;
+    /* letter-spacing: .2px; */
+}
+
+.quick-links{
+    width: 430px;
+    height: 220px;
+    background-color: #ffff;
+    border-radius: 15px;
+    padding: 25px 25px;
+    border: 0.5px solid var(--texts-colours-text-colours-01, #D9D9D9);
+}
+
+.quick-links h3{
+    color: #808080;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.q-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.deposit{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.icon-cover{
+    padding: 10px;
+    border-radius: 40%;
+    background-color: rgb(168, 177, 206, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deposit p{
+    color: var(--texts-colours-text-colours-04, #808080);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.deposit svg{
+    stroke: #049793;
+    width: 25px;
+    height: 25px;
+}
+
+.linee{
+    width: 2px;
+    height: 50px;
+    background-color: rgb(168, 177, 206, 0.5);
+    border-radius: 10px;
+    display: block;
+}
+
+.send{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.send p{
+    color: var(--texts-colours-text-colours-04, #808080);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.send svg{
+    stroke: #049793;
+    width: 25px;
+    height: 25px;
+}
+
+
+.receive{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.receive p{
+    color: var(--texts-colours-text-colours-04, #808080);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.receive svg{
+    stroke: #049793;
+    width: 25px;
+    height: 25px;
+}
+
+.transaction-history{
+    width: 100%;
+    height: fit-content;
+}
+
+.trans{
+    width: 94%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    .dashhome{
+        width: 100%;
+        margin-left: 0;
+        padding: 30px 30px 20px 30px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .card{
+        width: 100%;
+    }
+
+    .quick-links{
+        width: 100%;
+        height: fit-content;
+        background-color: #ffff;
+        border-radius: 15px;
+        padding: 10px 20px;
+        border: 0.5px solid var(--texts-colours-text-colours-01, #D9D9D9);
+    }
+
+    .trans{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 530px){    
+    
+    .icon-cover{
+        padding: 7px;
+    }
+    
+    .deposit p{
+        font-size: 12px;
+    }
+    
+    .deposit svg{
+        width: 19px;
+        height: 19px;
+    }
+    
+    .send p{
+        font-size: 12px;
+    }
+    
+    .send svg{
+        width: 19px;
+        height: 19px;
+    }
+
+    .receive p{
+        font-size: 12px;
+    }
+    
+    .receive svg{
+        width: 19px;
+        height: 19px;
+    }
+    
+    .linee{
+        display: none;
+    }
+    
+}

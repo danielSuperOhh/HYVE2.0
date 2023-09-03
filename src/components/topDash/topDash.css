@@ -1,0 +1,59 @@
+.topdash{
+    margin-left: 320px; 
+    height: 100px;
+    width: calc(100% - 320px); 
+    z-index: 2; 
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fd;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.notification{
+    width: 94%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.notification svg{
+    width: 29px;
+    height: 29px;
+    fill: #6a6e83;
+}
+
+@media screen and (max-width: 1200px){
+    .notification{
+        justify-content: flex-start;
+        padding-left: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    .topdash{
+        width: 100%;
+        margin-left: 0;
+    }
+}

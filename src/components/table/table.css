@@ -40,7 +40,7 @@
     padding: 20px;
 }
 
-td{
+.custom-table td{
     color: var(--texts-colours-primary-text-colour, #575656);
     font-size: 14px;
     font-style: normal;
@@ -48,13 +48,13 @@ td{
     line-height: 150%; 
 }
 
-td:nth-child(1){
+.custom-table td:nth-child(1){
     text-align: left;
     width: 40%;
 }
 
 @media screen and (max-width: 610px){
-    td, th{
+    .custom-table td, th{
         font-size: 13px;
     }
 

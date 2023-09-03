@@ -8,7 +8,7 @@ const Button = ({ width, height, hoverColor, hoverTextColor, padding, color, bor
     backgroundColor: backgroundColor || '#007bff',
     padding: padding || '15.45px 30.901px',
     borderRadius: borderRadius,
-    color: color            ,
+    color: color,
     border: border
 };
 

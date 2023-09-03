@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import './navbar.css'
 import Button from './button/Button';
+import { Link } from 'react-router-dom'
+
 
 const Navbar = () => {
     const [clicked, setClicked] = useState(false);
@@ -42,12 +44,23 @@ const Navbar = () => {
                     </div>
 
                     <div id="buttons">
-                        <Button backgroundColor="#FBFBFB" borderRadius='8px' border='1px solid #093D8B' hoverColor="#032356" color='#093D8B' hoverTextColor='#FBFBFB'>
-                            Sign in
-                        </Button>
+                    <Link to="/signin">
+                    <Button
+                        backgroundColor="#FBFBFB"
+                        borderRadius='8px'
+                        border='1px solid #093D8B'
+                        hoverColor="#032356"
+                        color='#093D8B'
+                        hoverTextColor='#FBFBFB'
+                    >
+                        Sign in
+                    </Button>
+                    </Link>
+                    <Link to='/signup'>
                         <Button backgroundColor="#093D8B" hoverTextColor='#FBFBFB' color="#FBFBFB" borderRadius='8px'  hoverColor="#032356">
                             Create Account
                         </Button>
+                    </Link>
                     </div>
                 </ul>
             </div>

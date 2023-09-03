@@ -1,0 +1,58 @@
+.transaction-table{
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 5px 20px;
+}
+
+
+.tablee{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.bally, .fully{
+    text-align: left;
+    padding: 15px 12px;
+}
+
+.fully{
+    border-top: 0.2px solid rgb(128, 128, 128, 0.1);
+}
+
+.bank{
+    display: table-cell;
+}
+
+.fully{
+    font-size: 12px;
+    color: rgb(31, 31, 31, 0.8);
+    font-weight: normal;
+}
+
+.bally{
+    background-color: white;
+    color: #808080;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 570px){
+    .transaction-table{
+        padding: 5px 10px;
+    }
+
+    .bally{
+        font-size: 13px;
+    }
+    
+    .fully{
+        font-size: 10px;
+    }
+    
+    .bank{
+        display: none;
+    }
+}
+

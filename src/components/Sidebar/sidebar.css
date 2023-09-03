@@ -1,0 +1,135 @@
+.responsive-sidebar {
+    width: 320px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease-in-out;
+    overflow-x: hidden;
+    display: flex;
+    z-index: 100;
+    flex-direction: column;
+    /* box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); */
+}
+  
+.responsive-sidebar.collapsed {
+    width: 60px;
+}
+  
+.sidebar-logo{
+    padding: 30px 0px 40px 50px;
+}
+
+.sidebar-logo img{
+    width: 120px;
+    height: 40px;
+}
+
+ul li{
+    padding: 20px 0px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sidebar-menu li{
+    padding: 21px 10px 21px 35px;
+    margin-bottom: 2px;
+    height: 60px;
+}
+  
+.logout{
+    position: absolute;
+    bottom: 0; 
+    width: 100%; 
+    padding-bottom: 30px;
+}
+
+.logout li{
+    padding: 19px 30px;
+}
+
+.links{
+    text-decoration: none;
+}
+
+.sidebar-menu li {
+    color: #1f1f1f;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 150%; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar-menu li:hover {
+    width: 100%;
+    background: rgb(44, 61, 143, 0.8);
+    color: #FBFBFB; 
+    border-radius: 10px;
+}
+
+/* .sidebar-menu img{
+    width: 20px;
+    height: 20px;
+    filter: grayscale(0%) invert(100%) ;
+}
+
+.sidebar-menu li img {
+    transition: filter 0.3s; 
+}
+  
+.sidebar-menu li:hover img {
+    filter: invert(100%) contrast(99%) saturate(7500%); 
+} */
+    
+.sidebar-menu svg{
+    stroke: #6a6e83;
+}
+
+.sidebar-menu li:hover svg{
+    stroke: #FBFBFB;
+}
+
+.toggle-button {
+    display: none;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.menuIcon{
+    width: 30px;
+    height: 30px;
+    color: #6a6e83;
+}
+
+  
+@media screen and (max-width: 1200px) {
+    .responsive-sidebar {
+        z-index: 1000;
+    }
+    
+    .responsive-sidebar.collapsed {
+      width: 0;
+    }
+  
+    .responsive-sidebar.collapsed .sidebar-menu {
+      display: none;
+    }
+  
+    .toggle-button {
+      display: block;
+      /* right: 65px; */
+    }
+}
+  
