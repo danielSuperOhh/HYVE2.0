@@ -17,17 +17,19 @@ import TopDash from '../components/topDash/TopDash'
  
 const Dashboard = () => {
   return (     
-    <div>
-      <Sidebar/>
+    <div className='conti'>
       <TopDash/>
-      <Routes>
-        <Route path="/" element={<DashHome/>} />
-        <Route path="history" element={<DashHistory />} />
-        <Route path="accounts" element={<DashAccount />} />
-        <Route path="settings" element={<DashSettings />} />
-        <Route path="logout" element={<DashLogout />} />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
+      <div className="page">
+        <Sidebar/>
+        <Routes>
+          <Route path="/" element={<DashHome/>} />
+          <Route path="history" element={<DashHistory />} />
+          <Route path="accounts" element={<DashAccount />} />
+          <Route path="settings" element={<DashSettings />} />
+          <Route path="logout" element={<DashLogout />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </div>
     </div>
   )
 }

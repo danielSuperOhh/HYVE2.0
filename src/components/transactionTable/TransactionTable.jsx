@@ -25,7 +25,7 @@ const TransactionTable = () => {
     <div className='transaction-table'>
         <table className='tablee'>
             <thead>
-                <tr>
+                <tr className='cunt'>
                     <th className='bally'>Name</th>
                     <th className='bally bank'>Bank</th>
                     <th className='bally'>Amount</th>

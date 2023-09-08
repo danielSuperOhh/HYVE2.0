@@ -123,4 +123,15 @@
     font-weight: 600;
     padding-bottom: 5px;
 }
+
+@media screen and (max-width:620px){
+    .signupp{
+        padding: 20px 20px;
+    }
+
+    .signup-containerr{
+        width: 100%;
+        padding: 20px;
+    }
+}
   

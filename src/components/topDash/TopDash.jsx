@@ -1,17 +1,53 @@
+import { useState } from 'react'
 import './topDash.css'
 import copy from '../../assets/copy.svg'
+import hyveSvg from '../../assets/hyveSvg.svg'
+
 
 const TopDash = () => {
+  const [isCopied, setIsCopied] = useState(false);
+
+  // Function to copy the user ID to the clipboard
+  const copyToClipboard = () => {
+    const textToCopy = 'hyve-hjgt-0098'; // Replace with your actual user ID
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      setIsCopied(true);
+      // Clear the "Copied" message after a few seconds
+      setTimeout(() => {
+        setIsCopied(false);
+      }, 2000);
+    });
+  };
+
   return (
     <>
       <div className="topdash">
-        <div className="notification">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-            <path d="m19.34 14.49-1-1.66c-.21-.37-.4-1.07-.4-1.48V8.82a5.91 5.91 0 0 0-3.37-5.33A2.926 2.926 0 0 0 11.99 2c-1.09 0-2.07.59-2.59 1.52-1.95.97-3.3 2.98-3.3 5.3v2.53c0 .41-.19 1.11-.4 1.47l-1.01 1.67c-.4.67-.49 1.41-.24 2.09.24.67.81 1.19 1.55 1.44 1.94.66 3.98.98 6.02.98 2.04 0 4.08-.32 6.02-.97.7-.23 1.24-.76 1.5-1.45s.19-1.45-.2-2.09ZM14.83 20.01A3.014 3.014 0 0 1 12 22c-.79 0-1.57-.32-2.12-.89-.32-.3-.56-.7-.7-1.11.13.02.26.03.4.05.23.03.47.06.71.08.57.05 1.15.08 1.73.08.57 0 1.14-.03 1.7-.08.21-.02.42-.03.62-.06l.49-.06Z" ></path></svg>        
+        <div className="top-logo">
+          <img src={hyveSvg} alt="" />
+        </div>
+        <div className="profile-top">
+          <div className="profile-top-circle"></div>
+          <div className="profile-info">
+            <div className="text">
+              <p className='namey'>John Ligma</p>
+              <p className='id'>User ID: hyve-hjgt-0098</p>
+            </div>
+            <div className="copy" onClick={copyToClipboard}>
+              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none"><path stroke="#093d8b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 12.9v4.2c0 3.5-1.4 4.9-4.9 4.9H6.9C3.4 22 2 20.6 2 17.1v-4.2C2 9.4 3.4 8 6.9 8h4.2c3.5 0 4.9 1.4 4.9 4.9z"></path><path stroke="#093d8b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M22 6.9v4.2c0 3.5-1.4 4.9-4.9 4.9H16v-3.1C16 9.4 14.6 8 11.1 8H8V6.9C8 3.4 9.4 2 12.9 2h4.2C20.6 2 22 3.4 22 6.9z"></path></svg>
+            </div>
+            {isCopied && (
+        <div className="copied-popup">
+          <p>Copied</p>
+        </div>
+      )}
+          </div>
         </div>
       </div>
     </>
   )
 }
 
-export default TopDash
+export default TopDash 
+
+
+

@@ -44,9 +44,9 @@
 
 .signin-logo{
     position: absolute;
-    top: 45px;
-    left: 45px;
-    /* background-color: #f4ecec; */
+    top: 0;
+    width: 100%;
+    padding: 40px;
 }
 
 .reset{
@@ -124,4 +124,15 @@
     font-weight: 700;
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media screen and (max-width:620px){
+    .signup{
+        padding: 0px 20px;
+    }
+
+    .signup-container{
+        width: 100%;
+        padding: 0px 20px 0px 20px;
+    }
 }

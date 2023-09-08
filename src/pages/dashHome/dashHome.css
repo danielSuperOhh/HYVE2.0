@@ -1,38 +1,65 @@
-.dashhome{
-    margin-left: 320px; 
-    width: calc(100% - 320px); 
-    height: fit-content;
+.dash-home{
+    width: calc(100% - 300px);
+    height: calc(100vh - 69px);
     z-index: 0; 
-    padding: 30px 30px 20px 40px;
-    background-color: #f8f9fd;
-    /* border: 1px solid; */
+    margin-left: 300px;
+    padding: 40px 40px 20px 40px;
+    background-color: #FBFBFB;
+    margin-top: 60px;
+    position: fixed;
+    overflow-y: scroll;
 }
 
+@media screen and (max-width: 1200px){
+    .dash-home{
+        width: 100%;
+        margin-left: 0;
+    }
 
-.over{
-    color: #041E45;
+}
+
+.dash-text{
+    width: 100%;
+}
+
+.dash-text h4{
+    color: var(--blues-blue-colour-07, #041E45);
     font-size: 16px;
     font-style: normal;
-    font-weight: bold;
-    line-height: 150%; 
-    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.dash-text p{
+    color: var(--texts-colours-text-colours-04, #808080);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .card-section{
     width: 100%;
     height: fit-content;
+    padding-top: 30px;
+}
+
+.first-side{
+    width: 100%;
     display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
+    gap: 20px;
+    height: 250px;
 }
 
 .card{
-    width: 420px;
-    height: 220px;
-    background-color: rgb(106, 110, 131, 0.2);
-    border-radius: 15px;
-    padding: 25px 25px;
+    width: 40%;
+    height: 100%;
+    padding: 44px 29px 43px 29px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 0.5px solid var(--blues-blue-colour-02, #ADBED8);
+    background: #FFF;
+    box-shadow: 0px 16px 40px -24px rgba(164, 164, 164, 0.34);
 }
 
 .eye{
@@ -51,7 +78,28 @@
     font-size: 14.6px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; 
+}
+
+.balance{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.wallet-cover{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 136, 42, 0.11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balance svg{
+    width: 20px;
+    height: 20px;
 }
 
 .balance p{
@@ -59,204 +107,205 @@
     font-size: 28px;
     font-weight: bold;
     font-family: 'Mulish', sans-serif;
-    padding: 50px 0px;
-    /* letter-spacing: .2px; */
+    padding: 55px 0px;
 }
 
-.quick-links{
-    width: 430px;
-    height: 220px;
-    background-color: #ffff;
-    border-radius: 15px;
-    padding: 25px 25px;
-    border: 0.5px solid var(--texts-colours-text-colours-01, #D9D9D9);
+.quicks{
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 0.5px solid var(--blues-blue-colour-02, #ADBED8);
+    background: #FFF;
+    padding: 45px 15px 10px 15px;
+    box-shadow: 0px 16px 40px -24px rgba(164, 164, 164, 0.34);
 }
 
-.quick-links h3{
-    color: #808080;
+.quicksP{
+    color: var(--texts-colours-text-colours-04, #808080);
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
+    line-height: 150%; 
+    padding-left: 20px;
 }
 
-.q-links{
-    width: 100%;
+.quicks .linkis{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding: 20px 20px 10px 20px;
 }
 
-.deposit{
-    width: 100px;
-    height: 100px;
+.linkis .depo{
+    width: 20%;
+    height: 70%;
     display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    border-radius: 6px;
+    border: 0.3px solid var(--greens-green-colour-03, #58BAB7);
+    background: #FFF;
     cursor: pointer;
+    flex-shrink: 1;
 }
 
-.icon-cover{
-    padding: 10px;
-    border-radius: 40%;
-    background-color: rgb(168, 177, 206, 0.3);
+/* .send{
+    border: 0.3px solid var(--orange-colours-orange-colour-05, #D45D00);
+}
+
+.rec{
+    border: 0.3px solid var(--extra-colours-success-colour, #06B178);
+}
+
+.with{
+    border: 0.3px solid var(--extra-colours-error-colour, #EF5252);
+}
+ */
+.dep-circle{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: rgb(4, 151, 147, 0.12);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.deposit p{
-    color: var(--texts-colours-text-colours-04, #808080);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.deposit svg{
+.depo svg{
+    height: 19px;
+    width: 19px;
     stroke: #049793;
-    width: 25px;
-    height: 25px;
-}
-
-.linee{
-    width: 2px;
-    height: 50px;
-    background-color: rgb(168, 177, 206, 0.5);
-    border-radius: 10px;
-    display: block;
-}
-
-.send{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-}
-
-.send p{
-    color: var(--texts-colours-text-colours-04, #808080);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .send svg{
-    stroke: #049793;
-    width: 25px;
-    height: 25px;
+    stroke: #AA4B00;
 }
 
-
-.receive{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
+.rec svg{
+    stroke: #06B178;
 }
 
-.receive p{
+.with svg{
+    stroke: #EF5252;
+}
+
+.depo p{
     color: var(--texts-colours-text-colours-04, #808080);
-    font-size: 14px;
+    font-size: 11px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-top: 13px;
 }
 
-.receive svg{
-    stroke: #049793;
-    width: 25px;
-    height: 25px;
-}
-
-.transaction-history{
-    width: 100%;
+.dash-transaction-history{
+    width: 92%;
     height: fit-content;
+    height: 210px;
+    padding-top: 30px;
 }
 
 .trans{
-    width: 94%;
-    height: 100%;
+    width: 100%;
+    height: 210px;
     background-color: #fff;
     border-radius: 5px;
+    overflow-y: scroll;
 }
 
-
-
-
-
+.dash-transaction-history p{
+    color: var(--extra-colours-error-colour, #EF5252);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 1200px){
-    .dashhome{
+    .first-side{
         width: 100%;
-        margin-left: 0;
-        padding: 30px 30px 20px 30px;
+        display: flex;
+        gap: 1;
+    }    
+
+    .card{
+        width: 35%;
     }
+
+    .quicks{
+        width: 65%;
+    }
+
+    .quicksP{
+        padding-left: 32px;
+    }
+
+    .quicks .linkis{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .dash-transaction-history{
+        width: 100%;
+        height: fit-content;
+        height: 210px;
+        padding-top: 30px;
+    }    
 }
 
-@media screen and (max-width: 570px){
+@media screen and (max-width: 960px){
+    .first-side{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    
     .card{
         width: 100%;
     }
 
-    .quick-links{
+    .quicks{
         width: 100%;
-        height: fit-content;
-        background-color: #ffff;
-        border-radius: 15px;
-        padding: 10px 20px;
-        border: 0.5px solid var(--texts-colours-text-colours-01, #D9D9D9);
     }
 
-    .trans{
-        width: 100%;
+    .quicks .linkis{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px 50px 20px;
     }
 }
 
-@media screen and (max-width: 530px){    
-    
-    .icon-cover{
-        padding: 7px;
+@media screen and (max-width: 530px) {
+    .dash-home{
+        padding: 40px 25px 20px 25px;
+    }    
+}
+
+@media screen and (max-width: 480px){
+    .quicks{
+        padding: 20px 15px 10px 15px;
     }
     
-    .deposit p{
-        font-size: 12px;
+    .quicks .linkis{
+        padding: 10px;
     }
     
-    .deposit svg{
-        width: 19px;
-        height: 19px;
-    }
-    
-    .send p{
-        font-size: 12px;
-    }
-    
-    .send svg{
-        width: 19px;
-        height: 19px;
+    .quicksP{
+        padding-left: 10px;
     }
 
-    .receive p{
-        font-size: 12px;
-    }
-    
-    .receive svg{
-        width: 19px;
-        height: 19px;
-    }
-    
-    .linee{
-        display: none;
-    }
-    
+    .linkis .depo{
+        border: none;
+    }    
 }

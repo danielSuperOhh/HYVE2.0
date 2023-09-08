@@ -1,59 +1,112 @@
 .topdash{
-    margin-left: 320px; 
-    height: 100px;
-    width: calc(100% - 320px); 
-    z-index: 2; 
-    position: sticky;
+    width: 100%;
+    display: inline-flex;
+    padding: 13px 79px 11px 69px;
+    align-items: center;
+    border-bottom: 1px solid var(--blues-blue-colour-01, #CED8E8);
+    background: var(--Primary-White-Colour, #FBFBFB);
+    justify-content: space-between;
+
+    position: fixed;
     top: 0;
-    background-color: #f8f9fd;
+    left: 0;
+    z-index: 100;
+}
+
+.top-logo{
+    display: block;
+}
+
+.top-logo img{
+    width: 78px;
+    height: 26.898px;
+}
+
+.profile-top{
+    display: flex;
+    gap: 15px;
+}
+
+.profile-top-circle{
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.profile-info{
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-}
-
-.notification{
-    width: 94%;
-    height: 80%;
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
-    padding-right: 30px;
-    position: sticky;
+    gap: 10px;
+    position: relative;
+}
+
+.copied-popup {
+    position: fixed;
     top: 0;
-    background-color: #fff;
-    border-radius: 5px;
+    left: 0;
+    width: 100%;
+    background-color: #093d8b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    animation: slide-down 0.5s ease-in-out;
 }
-
-.notification svg{
-    width: 29px;
-    height: 29px;
-    fill: #6a6e83;
-}
-
-@media screen and (max-width: 1200px){
-    .notification{
-        justify-content: flex-start;
-        padding-left: 30px;
+  
+@keyframes slide-down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
     }
 }
 
+.namey{
+    color: var(--Text-colour, #101010);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
 
+.id{
+    color: var(--blues-blue-colour-04, #325D9E);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+}
 
+.copy{
+    margin-top: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
+.copy svg{
+    width: 16px;
+    height: 16px;
+}
 
 @media screen and (max-width: 1200px){
+    .top-logo{
+        display: none;
+    }    
+}
+
+@media screen and (max-width: 800px){
     .topdash{
-        width: 100%;
-        margin-left: 0;
+        padding: 13px 79px 11px 40px;
     }
 }
+
+@media screen and (max-width: 530px) {
+    .topdash{
+        padding: 13px 79px 11px 30px;
+    }
+
+    .profile-info{
+        display: none;
+    }
+
+}
+
